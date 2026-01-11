@@ -6,7 +6,6 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Run on Tomcat
 FROM tomcat:9.0-jdk17
-COPY --from=build /app/target/ThucTapWeb.war /usr/local/tomcat/webapps/
+COPY --from=build /app/target/ThucTapWeb.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-
