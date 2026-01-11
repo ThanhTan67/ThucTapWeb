@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/add-product.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/bill-temp.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/edit-product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/header/navbar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/header" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/header/sidebar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/header" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/link/link.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/nhap.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/show-product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin/user.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/cart.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/favorite-product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/menu.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/order-placed.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client/product-detail.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/client" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/cuimia.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      </map>
+    </option>
+  </component>
+</project>

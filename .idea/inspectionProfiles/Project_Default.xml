@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="Fruit" />
+          <option value="Fruit" />
+          <option value="Fruit" />
+          <option value="Fruit" />
+          <option value="Fruit" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="com.google.protobuf:protobuf-java:3.19.4" />
+          <option value="taglibs:standard:1.1.2" />
+          <option value="com.google.guava:guava:14.0.1" />
+          <option value="com.google.code.gson:gson:2.8.8" />
+          <option value="org.apache.httpcomponents:httpclient:4.5.5" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
