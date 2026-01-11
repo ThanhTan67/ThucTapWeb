@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Css Styles -->
-    <jsp:include page="client/link/link.jsp"></jsp:include>
+    <jsp:include page="WEB-INF/client/link/link.jsp"></jsp:include>
     <style>
         .container .row .col-lg-6 ul li{
             margin-right: 30px;
@@ -31,7 +31,7 @@
 <c:url var="detail" value="DetailControl"></c:url>
 
 <span class="header__fixed">
-	<jsp:include page="client/header/header.jsp"></jsp:include>
+	<jsp:include page="WEB-INF/client/header/header.jsp"></jsp:include>
 
 </span>
 
@@ -340,7 +340,7 @@
     </div>
 </section>
 
-<jsp:include page="./client/footer/footer.jsp"></jsp:include>
+<jsp:include page="WEB-INF/client/footer/footer.jsp"></jsp:include>
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
