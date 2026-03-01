@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Css Styles -->
-    <jsp:include page="WEB-INF/client/link/link.jsp"></jsp:include>
+    <jsp:include page="client/link/link.jsp"></jsp:include>
     <style>
         .container .row .col-lg-6 ul li{
             margin-right: 30px;
@@ -31,7 +31,7 @@
 <c:url var="detail" value="DetailControl"></c:url>
 
 <span class="header__fixed">
-	<jsp:include page="WEB-INF/client/header/header.jsp"></jsp:include>
+	<jsp:include page="client/header/header.jsp"></jsp:include>
 
 </span>
 
@@ -105,12 +105,12 @@
                 </div>
             </c:forEach>
         </div>
-        <div style="padding-left: 500px;">
-            <button onclick="loadMore()" class="btn-btn-primary"
-                    style="padding: 10px
-                    23px; border-radius: 5px; border: none; background-color: #ff6615; font-weight: 700;
-        color:white">Xem thêm</button>
-        </div>
+<%--        <div style="padding-left: 500px;">--%>
+<%--            <button onclick="loadMore()" class="btn-btn-primary"--%>
+<%--                    style="padding: 10px--%>
+<%--                    23px; border-radius: 5px; border: none; background-color: #ff6615; font-weight: 700;--%>
+<%--        color:white">Xem thêm</button>--%>
+<%--        </div>--%>
         <div class="row featured__filter" >
             <c:forEach items="${listOutstandingProduct}" var="o" >
                 <div class="product col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
@@ -153,12 +153,12 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="banner__pic">
-                    <img src="assets/img/banner/banner-1.jpg" alt="">
+                    <img src="../assets/img/banner/banner-1.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="banner__pic">
-                    <img src="assets/img/banner/banner-2.jpg" alt="">
+                    <img src="../assets/img/banner/banner-2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -167,114 +167,114 @@
 <!-- Banner End -->
 
 <!-- Latest Product Section Begin -->
-<section class="latest-product spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="latest-product__text">
-                    <h4>Sản phẩm tươi</h4>
-                    <div class="latest-product__slider owl-carousel">
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
+<%--<section class="latest-product spad">--%>
+<%--    <div class="container">--%>
+<%--        <div class="row">--%>
+<%--            <div class="col-lg-4 col-md-6">--%>
+<%--                <div class="latest-product__text">--%>
+<%--                    <h4>Sản phẩm tươi</h4>--%>
+<%--                    <div class="latest-product__slider owl-carousel">--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
 
-                        </div>
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="latest-product__text">
-                    <h4>Sản phẩm sạch</h4>
-                    <div class="latest-product__slider owl-carousel">
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
+<%--                        </div>--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-4 col-md-6">--%>
+<%--                <div class="latest-product__text">--%>
+<%--                    <h4>Sản phẩm sạch</h4>--%>
+<%--                    <div class="latest-product__slider owl-carousel">--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
 
-                        </div>
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="latest-product__text">
-                    <h4>Sản phẩm ngon</h4>
-                    <div class="latest-product__slider owl-carousel">
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
+<%--                        </div>--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-4 col-md-6">--%>
+<%--                <div class="latest-product__text">--%>
+<%--                    <h4>Sản phẩm ngon</h4>--%>
+<%--                    <div class="latest-product__slider owl-carousel">--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
 
-                        </div>
-                        <div class="latest-prdouct__slider__item">
-                            <c:forEach var="b" items="${listRandProduct}">
-                                <a href="${detail}?pid=${b.id}" class="latest-product__item">
-                                    <div class="latest-product__item__pic">
-                                        <img src="${b.image}" alt="">
-                                    </div>
-                                    <div class="latest-product__item__text">
-                                        <h6>${b.name}</h6>
-                                        <span>${b.price}</span>
-                                    </div>
-                                </a>
-                            </c:forEach>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<%--                        </div>--%>
+<%--                        <div class="latest-prdouct__slider__item">--%>
+<%--                            <c:forEach var="b" items="${listRandProduct}">--%>
+<%--                                <a href="${detail}?pid=${b.id}" class="latest-product__item">--%>
+<%--                                    <div class="latest-product__item__pic">--%>
+<%--                                        <img src="${b.image}" alt="">--%>
+<%--                                    </div>--%>
+<%--                                    <div class="latest-product__item__text">--%>
+<%--                                        <h6>${b.name}</h6>--%>
+<%--                                        <span>${b.price}</span>--%>
+<%--                                    </div>--%>
+<%--                                </a>--%>
+<%--                            </c:forEach>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</section>--%>
 <!-- Latest Product Section End -->
 
 <!-- Blog Section Begin -->
@@ -291,7 +291,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="blog__item">
                     <div class="blog__item__pic">
-                        <img src="assets/img/blog/blog-1.jpg" alt="">
+                        <img src="../assets/img/blog/blog-1.jpg" alt="">
                     </div>
                     <div class="blog__item__text">
                         <ul>
@@ -307,7 +307,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="blog__item">
                     <div class="blog__item__pic">
-                        <img src="assets/img/blog/blog-2.jpg" alt="">
+                        <img src="../assets/img/blog/blog-2.jpg" alt="">
                     </div>
                     <div class="blog__item__text">
                         <ul>
@@ -323,7 +323,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="blog__item">
                     <div class="blog__item__pic">
-                        <img src="assets/img/blog/blog-3.jpg" alt="">
+                        <img src="../assets/img/blog/blog-3.jpg" alt="">
                     </div>
                     <div class="blog__item__text">
                         <ul>
@@ -340,16 +340,16 @@
     </div>
 </section>
 
-<jsp:include page="WEB-INF/client/footer/footer.jsp"></jsp:include>
+<jsp:include page="client/footer/footer.jsp"></jsp:include>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.nice-select.min.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="assets/js/jquery.slicknav.js"></script>
-<script src="assets/js/mixitup.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.nice-select.min.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/jquery.slicknav.js"></script>
+<script src="../assets/js/mixitup.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function loadMore() {
