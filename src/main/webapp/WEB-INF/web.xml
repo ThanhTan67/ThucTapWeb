@@ -39,10 +39,11 @@
         <welcome-file>IndexControll</welcome-file>
     </welcome-file-list>
 
-    <!-- Cấu hình welcome file dạng JSP (đang comment) 
+    Cấu hình welcome file dạng JSP (đang comment) 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-    -->
+   
 
 </web-app>
+
