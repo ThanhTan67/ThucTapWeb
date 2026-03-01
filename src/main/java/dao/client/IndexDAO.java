@@ -87,7 +87,7 @@ public class IndexDAO {
 
     public static List<Product> listRand4Product() {
         List<Product> list = new ArrayList<>();
-        String query = "select * from Products  ORDER BY RAND() LIMIT 4;";
+        String query = "select * from Products  ORDER BY RAND() LIMIT 12;";
         try {
             Connection conn = JDBCUtil.getConnection();
             PreparedStatement ps = conn.prepareStatement(query);
