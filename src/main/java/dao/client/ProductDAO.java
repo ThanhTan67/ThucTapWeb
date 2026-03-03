@@ -95,7 +95,7 @@ public class ProductDAO {
     }
     public static List<Review> getListReviewsByProductId(int productId) {
         List<Review> list = new ArrayList<>();
-        String query = "SELECT * FROM reviews WHERE product_id = ? and isAccept = true ORDER BY date_created DESC";
+        String query = "SELECT * FROM Reviews WHERE product_id = ? and isAccept = true ORDER BY date_created DESC";
         try {
             PreparedStatement ps = connection.prepareStatement(query);
             ps.setInt(1, productId);
@@ -112,7 +112,7 @@ public class ProductDAO {
 
     public static List<Review> getListReviews() {
         List<Review> list = new ArrayList<>();
-        String query = "SELECT * FROM reviews ORDER BY date_created DESC";
+        String query = "SELECT * FROM Reviews ORDER BY date_created DESC";
         try {
             PreparedStatement ps = connection.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
@@ -1001,5 +1001,6 @@ public class ProductDAO {
 
     public static void main(String[] args) throws SQLException {
     }
+
 
 }
