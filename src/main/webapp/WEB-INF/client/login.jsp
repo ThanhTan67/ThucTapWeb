@@ -60,7 +60,7 @@
             </a>
         </div>
         <div class="media-options">
-            <a href="https://accounts.google.com/o/oauth2/auth?scope=email%20profile&redirect_uri=http://localhost:8080/login-google&response_type=code&client_id=103711909118-kj61sqe0bv8srccvmk7tire0ih1oi87o.apps.googleusercontent.com" class="field google">
+            <a href="https://accounts.google.com/o/oauth2/auth?scope=email%20profile&redirect_uri=https://fruit.up.railway.app/login-google&response_type=code&client_id=103711909118-kj61sqe0bv8srccvmk7tire0ih1oi87o.apps.googleusercontent.com" class="field google">
                 <img src="assets/img/google.png" alt="" class="google-img">
                 <span>Tiếp tục với Google</span>
             </a>
@@ -125,3 +125,4 @@
 </script>
 </body>
 </html>
+
