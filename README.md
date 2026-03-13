@@ -512,7 +512,7 @@ Example servlet endpoints:
 
 <p align="center">
 <img src="screenshots/fruit-payment.png" width="45%">
-<img src="screenshots/fruit-orders.png" width="45%">
+<img src="screenshots/fruit-oders.png" width="45%">
 </p>
 
 <p align="center">
